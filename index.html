@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time">
+        </span>
+    </div>
+    <script>
+        
+        alert("This page will tell you the date and time.")
+        console.log("This is a tutorial");
+        function greet(name){
+            console.log("Hello Good Morning " + name);
+        }
+        setTimeout(greet, 4000, "Ma'am");
+        function displayTime()
+        {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime,  1000);
+        console.log("Today's date and time is :");
+        let now = new Date();
+        console.log(now);
+        let t = new Date(2000);
+        console.log(dt);
+        </script>
+</body>
+</html>
